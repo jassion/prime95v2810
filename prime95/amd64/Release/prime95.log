@@ -1,0 +1,47 @@
+﻿Build started 2017/11/22 15:07:22.
+     1>Project "D:\Jasn_Files\work\projects\tools\p95v2810.source\prime95\prime95.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "amd64\Release\prime95.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       CustomBuild:
+         All outputs are up-to-date.
+       ClCompile:
+         All outputs are up-to-date.
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /I.. /I..\gwnum /nologo /W3 /WX- /O2 /Ob1 /D WIN32 /D NDEBUG /D _WINDOWS /D ADD_UNDERSCORES /D _CRT_SECURE_NO_DEPRECATE /D _MBCS /GF /Gm- /EHsc /MT /GS- /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"c:\temp\prime95.release64.pch" /Fo".\x64\Release/" /Fd"c:\temp\prime95.release64.pdb" /Gd /TP /errorReport:prompt Prime95Doc.cpp
+         Prime95Doc.cpp
+       ResourceCompile:
+         All outputs are up-to-date.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(D:\Jasn_Files\work\projects\tools\p95v2810.source\prime95\amd64\Release\prime95.exe) does not match the Linker's OutputFile property value (D:\Jasn_Files\work\projects\tools\p95v2810.source\prime95\x64\Release\prime95.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:".\x64\Release/prime95.exe" /INCREMENTAL:NO /NOLOGO amd64\factor64.obj amd64\service.obj ..\gwnum\gwnum64.lib wininet.lib nafxcw.lib libcmt.lib libcurl.lib "libgmp-10.lib" libhwloc.lib Delayimp.lib /NODEFAULTLIB:libcmt.lib /DELAYLOAD:wininet.dll /MANIFEST /ManifestFile:"amd64\Release\prime95.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:".\x64\Release/prime95.pdb" /MAP:".\x64\Release/prime95.map" /SUBSYSTEM:WINDOWS /LARGEADDRESSAWARE /TLBID:1 /ENTRY:"MyWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Jasn_Files\work\projects\tools\p95v2810.source\prime95\amd64\Release\prime95.lib" /MACHINE:X64 amd64\Release\Prime95.res
+         .\x64\Release/ChildFrm.obj
+         .\x64\Release/CpuDlg.obj
+         .\x64\Release/EcmDlg.obj
+         .\x64\Release/HyperLink.obj
+         .\x64\Release/MainFrm.obj
+         .\x64\Release/ManualCommDlg.obj
+         .\x64\Release/Pminus1Dlg.obj
+         .\x64\Release/PreferencesDlg.obj
+         .\x64\Release/Prime95.obj
+         .\x64\Release/Prime95Doc.obj
+         .\x64\Release/Prime95View.obj
+         .\x64\Release/PrimenetDlg.obj
+         .\x64\Release/StartDlg.obj
+         .\x64\Release/StdAfx.obj
+         .\x64\Release/StopDlg.obj
+         .\x64\Release/TestDlg.obj
+         .\x64\Release/TimeDlg.obj
+         .\x64\Release/TortureDlg.obj
+         .\x64\Release/UnreserveDlg.obj
+         .\x64\Release/WelcomeDlg.obj
+         .\x64\Release/WorkerDlg.obj
+         prime95.vcxproj -> D:\Jasn_Files\work\projects\tools\p95v2810.source\prime95\amd64\Release\prime95.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:".\x64\Release/prime95.exe;#1" /manifest amd64\Release\prime95.exe.intermediate.manifest "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+       FinalizeBuildStatus:
+         Deleting file "amd64\Release\prime95.unsuccessfulbuild".
+         Touching "amd64\Release\prime95.lastbuildstate".
+     1>Done Building Project "D:\Jasn_Files\work\projects\tools\p95v2810.source\prime95\prime95.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:17.61

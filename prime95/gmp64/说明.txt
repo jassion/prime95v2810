@@ -1,0 +1,16 @@
+
+因为gmp在mingw的编译中使用的是msvcrt.dll作为c运行库，所在要在cl.exe编译命令中加上/MD （这样就默认选择了msvcrt.dll），不然只要涉及到文件操作比如gmp_fprintf，mpz_out_str ，等。
+
+正如在gmp.info-1中有一段说明：
+     MINGW uses the C runtime library `msvcrt.dll' for I/O, so
+     applications wanting to use the GMP I/O routines must be compiled
+     with `cl /MD' to do the same.  If one of the other C runtime
+     library choices provided by MS C is desired then the suggestion is
+     to use the GMP string functions and confine I/O to the application.
+好东西一起分享！ 欢迎访问我的csdn博客，带给您更多惊喜！
+
+http://bbs.emath.ac.cn/forum.php?mod=viewthread&tid=4855&page=2#pid54463
+
+By G-Spider @2014
+
+

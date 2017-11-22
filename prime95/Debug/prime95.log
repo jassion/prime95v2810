@@ -1,0 +1,74 @@
+﻿Build started 2017/10/31 15:54:29.
+     1>Project "D:\Jasn_Files\work\projects\tools\p95v2810.source\prime95\prime95.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching ".\Debug\prime95.unsuccessfulbuild".
+       CustomBuild:
+         Generating map file for help compiler...
+         Making help file...
+         已复制         1 个文件。
+         
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.. /I..\gwnum /I\libcurl /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D GDEBUG /D _CRT_SECURE_NO_DEPRECATE /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"c:\temp\prime95.debug32.pch" /Fo".\Debug/" /Fd"c:\temp\prime95.debug32.pdb" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
+         StdAfx.cpp
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.. /I..\gwnum /I\libcurl /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D GDEBUG /D _CRT_SECURE_NO_DEPRECATE /D _MBCS /Gm- /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"c:\temp\prime95.debug32.pch" /Fo".\Debug/" /Fd"c:\temp\prime95.debug32.pdb" /Gd /TP /analyze- /errorReport:prompt ChildFrm.cpp CpuDlg.cpp EcmDlg.cpp HyperLink.cpp MainFrm.cpp ManualCommDlg.cpp Pminus1Dlg.cpp PreferencesDlg.cpp Prime95.cpp Prime95Doc.cpp Prime95View.cpp PrimenetDlg.cpp StartDlg.cpp StopDlg.cpp TestDlg.cpp TimeDlg.cpp TortureDlg.cpp UnreserveDlg.cpp WelcomeDlg.cpp WorkerDlg.cpp
+         ChildFrm.cpp
+         CpuDlg.cpp
+         EcmDlg.cpp
+         HyperLink.cpp
+         MainFrm.cpp
+         ManualCommDlg.cpp
+         Pminus1Dlg.cpp
+         PreferencesDlg.cpp
+         Prime95.cpp
+         Prime95Doc.cpp
+         Prime95View.cpp
+         PrimenetDlg.cpp
+         StartDlg.cpp
+         StopDlg.cpp
+         TestDlg.cpp
+         TimeDlg.cpp
+         TortureDlg.cpp
+         UnreserveDlg.cpp
+         WelcomeDlg.cpp
+         WorkerDlg.cpp
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _AFXDLL /D _DEBUG /l"0x0409" /nologo /fo".\Debug\Prime95.res" Prime95.rc 
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo".\Debug\prime95.exe.embed.manifest.res" .\Debug\prime95_manifest.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\prime95.exe" /INCREMENTAL /NOLOGO factor32.obj service.obj ..\gwnum\gwnumd.lib ws2_32.lib wininet.lib winmm.lib libcurl.lib "libgmp-10.lib" libhwloc.lib /NODEFAULTLIB:libcmt /NODEFAULTLIB:msvcrt /MANIFEST /ManifestFile:".\Debug\prime95.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"c:\temp\prime95.debug32.pdb" /SUBSYSTEM:WINDOWS /LARGEADDRESSAWARE /TLBID:1 /ENTRY:"MyWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\prime95.lib" /MACHINE:X86 .\Debug\Prime95.res
+         .\Debug\prime95.exe.embed.manifest.res
+         .\Debug/ChildFrm.obj
+         .\Debug/CpuDlg.obj
+         .\Debug/EcmDlg.obj
+         .\Debug/HyperLink.obj
+         .\Debug/MainFrm.obj
+         .\Debug/ManualCommDlg.obj
+         .\Debug/Pminus1Dlg.obj
+         .\Debug/PreferencesDlg.obj
+         .\Debug/Prime95.obj
+         .\Debug/Prime95Doc.obj
+         .\Debug/Prime95View.obj
+         .\Debug/PrimenetDlg.obj
+         .\Debug/StartDlg.obj
+         .\Debug/StdAfx.obj
+         .\Debug/StopDlg.obj
+         .\Debug/TestDlg.obj
+         .\Debug/TimeDlg.obj
+         .\Debug/TortureDlg.obj
+         .\Debug/UnreserveDlg.obj
+         .\Debug/WelcomeDlg.obj
+         .\Debug/WorkerDlg.obj
+     1>Prime95Doc.obj : error LNK2019: unresolved external symbol _curl_easy_cleanup referenced in function "int __cdecl pnHttpServerCURL(char *,unsigned int,char *)" (?pnHttpServerCURL@@YAHPADI0@Z)
+     1>Prime95Doc.obj : error LNK2019: unresolved external symbol _curl_easy_perform referenced in function "int __cdecl pnHttpServerCURL(char *,unsigned int,char *)" (?pnHttpServerCURL@@YAHPADI0@Z)
+     1>Prime95Doc.obj : error LNK2019: unresolved external symbol _curl_easy_setopt referenced in function "int __cdecl pnHttpServerCURL(char *,unsigned int,char *)" (?pnHttpServerCURL@@YAHPADI0@Z)
+     1>Prime95Doc.obj : error LNK2019: unresolved external symbol _curl_easy_init referenced in function "int __cdecl pnHttpServerCURL(char *,unsigned int,char *)" (?pnHttpServerCURL@@YAHPADI0@Z)
+     1>Prime95Doc.obj : error LNK2019: unresolved external symbol _curl_global_init referenced in function "void __cdecl LoadPrimenet(void)" (?LoadPrimenet@@YAXXZ)
+     1>.\Debug\prime95.exe : fatal error LNK1120: 5 unresolved externals
+     1>Done Building Project "D:\Jasn_Files\work\projects\tools\p95v2810.source\prime95\prime95.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:24.58
